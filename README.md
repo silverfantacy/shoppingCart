@@ -15,4 +15,4 @@ npm install
 gulp
 ```
 
-[範例網站]()。
+[範例網站](https://silverfantacy.github.io/shoppingCart/)。
