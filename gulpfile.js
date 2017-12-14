@@ -23,7 +23,8 @@ gulp.task('clean', () => {
 gulp.task('vendorJs', function () {
   return gulp.src([
     './node_modules/jquery/dist/jquery.slim.min.js',
-    './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+    './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    './source/javascripts/main.js'
   ])
   .pipe($.concat('vendor.js'))
   .pipe(gulp.dest('./public/javascripts'))
@@ -55,7 +56,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('copy', function () {
-  gulp.src(['./source/**/**', '!source/stylesheets/**/**'])
+  gulp.src(['./source/**/**', '!source/stylesheets/**/**', '!source/javascripts/**/**'])
     .pipe(gulp.dest('./public/'))
     .pipe(browserSync.reload({
       stream: true

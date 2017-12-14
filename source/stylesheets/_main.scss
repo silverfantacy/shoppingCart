@@ -53,11 +53,15 @@ body {
 }
 
 // 要如何取消按鈕focus時的box-shadow?
-.focus-shadow {
+.focus-shadow:focus {
   box-shadow: none!important;
 }
 
 // 禁止點擊小技巧
 .btn.disabled {
   pointer-events: none;
+}
+
+.alert-rounded {
+  border-radius: 50px;
 }
