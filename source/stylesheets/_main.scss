@@ -43,6 +43,21 @@ body {
   border-width: 2px;
 }
 
+// 消search時focus的box-shadow時是這樣嗎?
 .search-focus:focus {
   box-shadow: 0 0 0px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+// 要如何取消按鈕focus時的box-shadow?
+.focus-shadow {
+  box-shadow: none!important;
+}
+
+// 禁止點擊小技巧
+.btn.disabled {
+  pointer-events: none;
 }
