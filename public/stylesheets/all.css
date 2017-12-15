@@ -6359,6 +6359,9 @@ body {
 .btn {
   border-width: 2px; }
 
+.btn-search:hover > i:before {
+  color: #fff; }
+
 .search-focus:focus {
   box-shadow: 0 0 0px; }
 

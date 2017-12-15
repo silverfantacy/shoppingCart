@@ -43,6 +43,10 @@ body {
   border-width: 2px;
 }
 
+.btn-search:hover>i:before {
+  color: #fff;
+}
+
 // 消search時focus的box-shadow時是這樣嗎?
 .search-focus:focus {
   box-shadow: 0 0 0px;
