@@ -72,6 +72,7 @@ gulp.task('browserSync', function () {
 
 gulp.task('watch', function () {
   gulp.watch(['./source/stylesheets/**/*.sass', './source/stylesheets/**/*.scss'], ['sass']);
+  gulp.watch(['./source/javascripts/**/*.js'], ['vendorJs']);
   gulp.watch(['./source/**/**', '!/source/stylesheets/**/**'], ['copy']);
 });
 
