@@ -27,24 +27,30 @@
             <div class="font-weight-bold mb-1">已選擇商品</div>
             <tbody class="">
               <tr>
-                <th scope="row">
-                  <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                <th scope="row align-items-center">
+                  <button type="button" class="btn btn-light btn-sm border-0 p-0" data-toggle="modal" data-target="#removeModal" data-title="金牌西裝 1件"
+                    data-backdrop="static">
+                    <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                  </button>
                 </th>
                 <td>金牌西裝</td>
                 <td>1件</td>
                 <td class="text-right">$520</td>
               </tr>
               <tr>
-                <th scope="row">
-                  <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                <th scope="row align-items-center">
+                  <button type="button" class="btn btn-light btn-sm border-0 p-0" data-toggle="modal" data-target="#removeModal" data-title="W襯衫 1件"
+                    data-quantity="1">
+                    <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                  </button>
                 </th>
-                <td>金牌西裝</td>
+                <td>W襯衫</td>
                 <td>1件</td>
-                <td class="text-right">$520</td>
+                <td class="text-right">$300</td>
               </tr>
             </tbody>
           </table>
-          <a href="#" class="btn btn-primary btn-block">
+          <a href="checkout.html" class="btn btn-primary btn-block">
             <i class="fa fa-cart-arrow-down mr-1" aria-hidden="true"></i>結帳去</a>
         </div>
       </div>
@@ -111,7 +117,7 @@
                 <option value="2">2 件</option>
                 <option value="3">3 件</option>
               </select>
-              <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-cart-plus mr-1" aria-hidden="true"></i>加入購物車</a>
+              <a tabindex="0" class="btn btn-primary btn-sm"  role="button" data-toggle="popover" data-trigger="focus" data-content="已經加入購物車"><i class="fa fa-cart-plus mr-1" aria-hidden="true"></i>加入購物車</a>
             </div>
           </div>
         </div>
@@ -156,6 +162,28 @@
       <p class="text-secondary text-center">Made with Bootstrap4</p>
     </div>
   </footer>
+
+  <!-- Modal區 -->
+  <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="removeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title font-weight-bold" id="removeModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>確認要刪除嗎?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-danger">刪除</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="javascripts/vendor.js"></script>
 </body>
 

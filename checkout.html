@@ -27,20 +27,26 @@
             <div class="font-weight-bold mb-1">已選擇商品</div>
             <tbody class="">
               <tr>
-                <th scope="row">
-                  <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                <th scope="row align-items-center">
+                  <button type="button" class="btn btn-light btn-sm border-0 p-0" data-toggle="modal" data-target="#removeModal" data-title="金牌西裝 1件"
+                    data-backdrop="static">
+                    <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                  </button>
                 </th>
                 <td>金牌西裝</td>
                 <td>1件</td>
                 <td class="text-right">$520</td>
               </tr>
               <tr>
-                <th scope="row">
-                  <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                <th scope="row align-items-center">
+                  <button type="button" class="btn btn-light btn-sm border-0 p-0" data-toggle="modal" data-target="#removeModal" data-title="W襯衫 1件"
+                    data-quantity="1">
+                    <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                  </button>
                 </th>
-                <td>金牌西裝</td>
+                <td>W襯衫</td>
                 <td>1件</td>
-                <td class="text-right">$520</td>
+                <td class="text-right">$300</td>
               </tr>
             </tbody>
           </table>
@@ -85,7 +91,7 @@
                   顯示購物車細節
                   <i class="fa fa-angle-double-down ml-1" aria-hidden="true"></i>
                 </a>
-                <span class="h4 font-weight-bold mb-0">$600</span>
+                <span class="h4 font-weight-bold mb-0">$900</span>
               </div>
             </div>
             <!-- 需加入navbar-collapse -->
@@ -96,6 +102,7 @@
                     <th width="30"></th>
                     <th width="100"></th>
                     <th>商品名稱</th>
+                    <th>規格</th>
                     <th width="100">數量</th>
                     <th width="80">小計</th>
                   </tr>
@@ -103,9 +110,10 @@
                 <tbody>
                   <tr>
                     <th class="align-middle">
-                      <a href="#">
+                      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#removeModal" data-title="金牌西裝 1件"
+                        data-backdrop="static">
                         <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
-                      </a>
+                      </button>
                     </th>
                     <th class="align-middle">
                       <img class="img-thumbnail" src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
@@ -114,24 +122,49 @@
                     <th class="align-middle">
                       <a href="product.html" class="text-dark">金牌西裝</a>
                     </th>
-                    <th class="align-middle">
+                    <td class="align-middle">
+                      L
+                    </td>
+                    <td class="align-middle">
                       1件
-                    </th>
-                    <th class="align-middle text-right">
+                    </td>
+                    <td class="align-middle text-right">
                       $520
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="align-middle">
+                      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#removeModal" data-title="W襯衫 1件" data-backdrop="static">
+                        <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
+                      </button>
                     </th>
+                    <th class="align-middle">
+                      <img class="img-thumbnail" src="https://images.unsplash.com/photo-1489345745021-740d36bbda21?auto=format&fit=crop&w=1351&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+                        alt="Card image cap">
+                    </th>
+                    <th class="align-middle">
+                      <a href="product.html" class="text-dark">W襯衫</a>
+                    </th>
+                    <td class="align-middle">
+                      M
+                    </td>
+                    <td class="align-middle">
+                      1件
+                    </td>
+                    <td class="align-middle text-right">
+                      $300
+                    </td>
                   </tr>
                   <tr>
-                    <th colspan="4" class="text-right font-weight-bold">運費</th>
-                    <th class="text-right font-weight-bold">+ $80</th>
+                    <td colspan="5" class="text-right font-weight-bold">運費</td>
+                    <td class="text-right font-weight-bold">+ $80</td>
                   </tr>
                   <tr>
-                    <th colspan="4" class="text-right font-weight-bold">
+                    <td colspan="5" class="text-right font-weight-bold">
                       <strong>合計</strong>
-                    </th>
-                    <th class="text-right font-weight-bold">$600</th>
+                    </td>
+                    <td class="text-right font-weight-bold">$900</td>
                   </tr>
-                  <!-- font-weight-bold、strong不知道為甚麼失效 -->
                 </tbody>
               </table>
             </div>
@@ -139,15 +172,15 @@
 
 
           <!-- 填寫表單 -->
-          <form class="mt-4" id="needs-validation" novalidate>
+          <form class="mt-4" id="needs-validation" action="conbine.html">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputName">姓名</label>
-                <input type="text" class="form-control" id="inputName" placeholder="姓名">
+                <input type="text" class="form-control" id="inputName" placeholder="姓名" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
               </div>
             </div>
             <div class="form-row">
@@ -157,7 +190,7 @@
               </div>
               <div class="form-group col-md">
                 <label for="inputState">城市</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" class="form-control" required>
                   <option selected>台北市</option>
                   <option>新北市</option>
                   <option>桃園縣</option>
@@ -171,16 +204,17 @@
               </div>
               <div class="form-group col-md">
                 <label for="inputZip">郵遞區號</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip" required>
               </div>
             </div>
             <div class="form-group">
               <label for="inputAddress">地址</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="重慶南路X段XXX號X樓">
+              <input type="text" class="form-control" id="inputAddress" placeholder="重慶南路X段XXX號X樓" required>
             </div>
             <div class="form-group d-flex justify-content-end">
               <a href="index.html" class="btn btn-secondary mr-1">繼續選購</a>
-              <a href="conbine.html" class="btn btn-primary">確認付款</a>
+              <!-- <a href="conbine.html" class="btn btn-primary">確認付款</a> -->
+              <button type="submit" class="btn btn-primary">確認付款</button>
             </div>
 
           </form>
@@ -210,6 +244,28 @@
       <p class="text-secondary text-center">Made with Bootstrap4</p>
     </div>
   </footer>
+
+<!-- Modal區 -->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="removeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title font-weight-bold" id="removeModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>確認要刪除嗎?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-danger">刪除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <script src="javascripts/vendor.js"></script>
 </body>
 
