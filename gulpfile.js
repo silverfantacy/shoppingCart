@@ -16,7 +16,7 @@ const options = minimist(process.argv.slice(2), envOptions);
 console.log(options);
 
 gulp.task('clean', () => {
-  return gulp.src(['./public', './.tmp'], { read: false }) // 選項讀取：false阻止gulp讀取文件的內容，使此任務更快。
+  return gulp.src(['./public', './.publish'], { read: false }) // 選項讀取：false阻止gulp讀取文件的內容，使此任務更快。
     .pipe($.clean());
 });
 
@@ -24,7 +24,7 @@ gulp.task('vendorJs', function () {
   return gulp.src([
     './node_modules/jquery/dist/jquery.slim.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-    './source/javascripts/main.js'
+    './source/javascripts/helpers/main.js'
   ])
   .pipe($.concat('vendor.js'))
   .pipe(gulp.dest('./public/javascripts'))
