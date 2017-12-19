@@ -28,8 +28,8 @@
             <tbody class="">
               <tr>
                 <th scope="row align-items-center">
-                  <button type="button" class="btn btn-light btn-sm border-0 p-0 bg-transparent" data-toggle="modal" data-target="#removeModal" data-title="金牌西裝 1件"
-                    data-backdrop="static">
+                  <button type="button" class="btn btn-light btn-sm border-0 p-0 bg-transparent" data-toggle="modal" data-target="#removeModal"
+                    data-title="金牌西裝 1件" data-backdrop="static">
                     <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
                   </button>
                 </th>
@@ -39,8 +39,8 @@
               </tr>
               <tr>
                 <th scope="row align-items-center">
-                  <button type="button" class="btn btn-light btn-sm border-0 p-0 bg-transparent" data-toggle="modal" data-target="#removeModal" data-title="W襯衫 1件"
-                    data-quantity="1">
+                  <button type="button" class="btn btn-light btn-sm border-0 p-0 bg-transparent" data-toggle="modal" data-target="#removeModal"
+                    data-title="W襯衫 1件" data-quantity="1">
                     <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
                   </button>
                 </th>
@@ -83,7 +83,7 @@
       <div class="row justify-content-center mt-5">
         <div class="col-md-8">
           <!-- 外層navbar navbar-expand-md -->
-          <div class="navbar navbar-expand-md px-0 flex-column">
+          <div class=" px-0 flex-column">
             <!-- card本體 -->
             <div class="card w-100">
               <div class="card-header font-weight-bold d-flex justify-content-between align-items-center" role="tab" id="headingOne">
@@ -95,7 +95,7 @@
               </div>
             </div>
             <!-- 需加入navbar-collapse -->
-            <div id="collapseOne" class="collapse navbar-collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOne" class="collapse " role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
               <table class="table">
                 <thead>
                   <tr>
@@ -134,7 +134,8 @@
                   </tr>
                   <tr>
                     <th class="align-middle">
-                      <button type="button" class="btn btn-light bg-transparent border-0" data-toggle="modal" data-target="#removeModal" data-title="W襯衫 1件" data-backdrop="static">
+                      <button type="button" class="btn btn-light bg-transparent border-0" data-toggle="modal" data-target="#removeModal" data-title="W襯衫 1件"
+                        data-backdrop="static">
                         <i class="fa fa-trash-o text-secondary" aria-hidden="true"></i>
                       </button>
                     </th>
@@ -245,26 +246,26 @@
     </div>
   </footer>
 
-<!-- Modal區 -->
-<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="removeModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header bg-danger text-white">
-        <h5 class="modal-title font-weight-bold" id="removeModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>確認要刪除嗎?</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-outline-danger">刪除</button>
+  <!-- Modal區 -->
+  <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="removeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title font-weight-bold" id="removeModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>確認要刪除嗎?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-danger">刪除</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <script src="javascripts/vendor.js"></script>
 </body>
